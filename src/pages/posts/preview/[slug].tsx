@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next"
+import { GetStaticPaths, GetStaticProps } from "next"
 import { useSession } from "next-auth/client";
 import Head from "next/head";
 import Link from "next/link";
@@ -51,10 +51,12 @@ export default function PostPreview({ post }: PostPreviewProps) {
     )
 }
 
-export const getStaticPaths = () => {
+export const getStaticPaths: GetStaticPaths = async () => {
     return {
-        paths: [],
-        fallback: 'blocking'
+        paths: [
+            //{ params: { slug: 'introduction-to-http-cookies' } } //Exemplo de página gerada na hora do build, e o restante vão ser geradas caso o usuário pedir
+        ],
+        fallback: 'blocking'// true, false, blocking => (true: ruim para SEO, vai ser gerado pelo lado do cliente, primeiro a estrutura e depois o conteúdo,e não no servidor node), (false: Se o post não for carregado vai dar 404), (blocking: parecido com true, porém é carregado no servidor, server side rendering)
     }
 }
 
@@ -79,6 +81,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return {
         props: {
             post,
-        }
+        },
+        revalidate: 60 * 30,//30 minutes
     }
 }
