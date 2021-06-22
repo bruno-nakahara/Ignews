@@ -33,7 +33,7 @@ export default async (req: NextApiRequest, res:NextApiResponse) => {
                 email: session.user.email,
                 //metadata
             })
-    
+            console.log("criar subscription")
             await fauna.query(
                 q.Update(
                     q.Ref(q.Collection('users'), user.ref.id),
