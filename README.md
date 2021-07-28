@@ -1,6 +1,6 @@
 <h1>Ignews</h1>
 
-<h2>Aplicação de subscriptions pago de newsletter</h2>
+<p>Aplicação de subscriptions pago de newsletter</p>
 
 <h2>Sobre o projeto</h2>
 
