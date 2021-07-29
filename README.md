@@ -5,3 +5,14 @@
 <h2>Sobre o projeto</h2>
 
 <h2>Techs</h2>
+
+<ul>
+  <li>NextJS</li>
+  <li>Typescript</li>
+  <li>Next-Auth</li>
+  <li>Jest</li>
+  <li>Testing Library</li>
+  <li>SASS</li>
+  <li>Prismic</li>
+  <li>Stripe</li>
+</ul>
