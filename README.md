@@ -4,7 +4,7 @@
 
 <h2>Sobre o projeto</h2>
 
-<p>Link para o </p>[site](https://ignews2-beta.vercel.app/)
+Link para o [site](https://ignews2-beta.vercel.app/)
 
 <h2>Techs</h2>
 
