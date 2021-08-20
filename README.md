@@ -4,6 +4,8 @@
 
 <h2>Sobre o projeto</h2>
 
+Um site de assinatura de artigos pago, utilizando stripe para a realização do pagamento e autenticação com github
+
 Link para o [site](https://ignews2-beta.vercel.app/)
 
 <h2>Techs</h2>
