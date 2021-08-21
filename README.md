@@ -8,6 +8,8 @@ Site de assinatura de artigos pago, utilizando stripe para a realização do pag
 
 Link para o [site](https://ignews2-beta.vercel.app/)
 
+Obs: Para conseguir autenticar com github deve configurar o profile, em Public email ou Email público, para o seu email.
+
 <h2>Techs</h2>
 
 <ul>
